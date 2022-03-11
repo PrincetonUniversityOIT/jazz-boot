@@ -30,6 +30,8 @@ publishDir:             "_site"
 
 module:
   mounts:
+    - source:           fonts
+      target:           static/docs/5.1/dist/fonts
     - source:           dist
       target:           static/docs/5.1/dist
     - source:           site/assets

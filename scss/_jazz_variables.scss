@@ -1,0 +1,12 @@
+$border-radius: .125rem !default;
+//$font-family-sans-serif: system-ui, -apple-system, "Public Sans", "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// $font-family-sans-serif: "Public Sans", system-ui, -apple-system, "sans-serif" !default;
+// $font-family-base: system-ui, -apple-system, "Public Sans", "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base: "Public Sans", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+// Buttons
+$btn-font-size: px-to-rem(14) !default;
+$btn-font-weight: 600 !default;
+$btn-line-height: px-to-rem(18) !default;
+$btn-padding-x: px-to-rem(20) !default;
+$btn-padding-y: px-to-rem(12) !default;

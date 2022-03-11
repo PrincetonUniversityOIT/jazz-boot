@@ -1,0 +1,273 @@
+$jazz-pu-orange: #e77500 !default;
+$jazz-red: #d14112 !default;
+$jazz-teal: #086b83 !default;
+$jazz-orange: #fb9f26 !default;
+$jazz-blue: #0b7097 !default;
+$jazz-yellow: #fbc129 !default;
+$jazz-indigo: #5c43a8 !default;
+$jazz-green: #00c08b !default;
+$jazz-violet: #983a90 !default;
+$jazz-rose: #e91e63 !default;
+$jazz-red-bold: #b00002 !default;
+$jazz-blue-bold: #074760 !default;
+$jazz-green-bold: #006450 !default;
+$jazz-indigo-bold: #1e0944 !default;
+$jazz-teal-bold: #014758 !default;
+$jazz-violet-bold: #733b8c !default;
+$jazz-navy-bold: #0b2f42 !default;
+$jazz-rose-bold: #880e4f !default;
+
+// fusv-disable
+$jazz-pu-orange-100: tint-color($jazz-pu-orange, 80%) !default;
+$jazz-pu-orange-200: tint-color($jazz-pu-orange, 60%) !default;
+$jazz-pu-orange-300: tint-color($jazz-pu-orange, 40%) !default;
+$jazz-pu-orange-400: tint-color($jazz-pu-orange, 20%) !default;
+$jazz-pu-orange-500: $jazz-pu-orange !default;
+$jazz-pu-orange-600: shade-color($jazz-pu-orange, 20%) !default;
+$jazz-pu-orange-700: shade-color($jazz-pu-orange, 40%) !default;
+$jazz-pu-orange-800: shade-color($jazz-pu-orange, 60%) !default;
+$jazz-pu-orange-900: shade-color($jazz-pu-orange, 80%) !default;
+
+$jazz-red-100: tint-color($jazz-red, 80%) !default;
+$jazz-red-200: tint-color($jazz-red, 60%) !default;
+$jazz-red-300: tint-color($jazz-red, 40%) !default;
+$jazz-red-400: tint-color($jazz-red, 20%) !default;
+$jazz-red-500: $jazz-red !default;
+$jazz-red-600: shade-color($jazz-red, 20%) !default;
+$jazz-red-700: shade-color($jazz-red, 40%) !default;
+$jazz-red-800: shade-color($jazz-red, 60%) !default;
+$jazz-red-900: shade-color($jazz-red, 80%) !default;
+
+$jazz-teal-100: tint-color($jazz-teal, 80%) !default;
+$jazz-teal-200: tint-color($jazz-teal, 60%) !default;
+$jazz-teal-300: tint-color($jazz-teal, 40%) !default;
+$jazz-teal-400: tint-color($jazz-teal, 20%) !default;
+$jazz-teal-500: $jazz-teal !default;
+$jazz-teal-600: shade-color($jazz-teal, 20%) !default;
+$jazz-teal-700: shade-color($jazz-teal, 40%) !default;
+$jazz-teal-800: shade-color($jazz-teal, 60%) !default;
+$jazz-teal-900: shade-color($jazz-teal, 80%) !default;
+
+$jazz-orange-100: tint-color($jazz-orange, 80%) !default;
+$jazz-orange-200: tint-color($jazz-orange, 60%) !default;
+$jazz-orange-300: tint-color($jazz-orange, 40%) !default;
+$jazz-orange-400: tint-color($jazz-orange, 20%) !default;
+$jazz-orange-500: $jazz-orange !default;
+$jazz-orange-600: shade-color($jazz-orange, 20%) !default;
+$jazz-orange-700: shade-color($jazz-orange, 40%) !default;
+$jazz-orange-800: shade-color($jazz-orange, 60%) !default;
+$jazz-orange-900: shade-color($jazz-orange, 80%) !default;
+
+$jazz-blue-100: tint-color($jazz-blue, 80%) !default;
+$jazz-blue-200: tint-color($jazz-blue, 60%) !default;
+$jazz-blue-300: tint-color($jazz-blue, 40%) !default;
+$jazz-blue-400: tint-color($jazz-blue, 20%) !default;
+$jazz-blue-500: $jazz-blue !default;
+$jazz-blue-600: shade-color($jazz-blue, 20%) !default;
+$jazz-blue-700: shade-color($jazz-blue, 40%) !default;
+$jazz-blue-800: shade-color($jazz-blue, 60%) !default;
+$jazz-blue-900: shade-color($jazz-blue, 80%) !default;
+
+$jazz-yellow-100: tint-color($jazz-yellow, 80%) !default;
+$jazz-yellow-200: tint-color($jazz-yellow, 60%) !default;
+$jazz-yellow-300: tint-color($jazz-yellow, 40%) !default;
+$jazz-yellow-400: tint-color($jazz-yellow, 20%) !default;
+$jazz-yellow-500: $jazz-yellow !default;
+$jazz-yellow-600: shade-color($jazz-yellow, 20%) !default;
+$jazz-yellow-700: shade-color($jazz-yellow, 40%) !default;
+$jazz-yellow-800: shade-color($jazz-yellow, 60%) !default;
+$jazz-yellow-900: shade-color($jazz-yellow, 80%) !default;
+
+$jazz-indigo-100: tint-color($jazz-indigo, 80%) !default;
+$jazz-indigo-200: tint-color($jazz-indigo, 60%) !default;
+$jazz-indigo-300: tint-color($jazz-indigo, 40%) !default;
+$jazz-indigo-400: tint-color($jazz-indigo, 20%) !default;
+$jazz-indigo-500: $jazz-indigo !default;
+$jazz-indigo-600: shade-color($jazz-indigo, 20%) !default;
+$jazz-indigo-700: shade-color($jazz-indigo, 40%) !default;
+$jazz-indigo-800: shade-color($jazz-indigo, 60%) !default;
+$jazz-indigo-900: shade-color($jazz-indigo, 80%) !default;
+
+$jazz-green-100: tint-color($jazz-green, 80%) !default;
+$jazz-green-200: tint-color($jazz-green, 60%) !default;
+$jazz-green-300: tint-color($jazz-green, 40%) !default;
+$jazz-green-400: tint-color($jazz-green, 20%) !default;
+$jazz-green-500: $jazz-green !default;
+$jazz-green-600: shade-color($jazz-green, 20%) !default;
+$jazz-green-700: shade-color($jazz-green, 40%) !default;
+$jazz-green-800: shade-color($jazz-green, 60%) !default;
+$jazz-green-900: shade-color($jazz-green, 80%) !default;
+
+$jazz-violet-100: tint-color($jazz-violet, 80%) !default;
+$jazz-violet-200: tint-color($jazz-violet, 60%) !default;
+$jazz-violet-300: tint-color($jazz-violet, 40%) !default;
+$jazz-violet-400: tint-color($jazz-violet, 20%) !default;
+$jazz-violet-500: $jazz-violet !default;
+$jazz-violet-600: shade-color($jazz-violet, 20%) !default;
+$jazz-violet-700: shade-color($jazz-violet, 40%) !default;
+$jazz-violet-800: shade-color($jazz-violet, 60%) !default;
+$jazz-violet-900: shade-color($jazz-violet, 80%) !default;
+
+$jazz-rose-100: tint-color($jazz-rose, 80%) !default;
+$jazz-rose-200: tint-color($jazz-rose, 60%) !default;
+$jazz-rose-300: tint-color($jazz-rose, 40%) !default;
+$jazz-rose-400: tint-color($jazz-rose, 20%) !default;
+$jazz-rose-500: $jazz-rose !default;
+$jazz-rose-600: shade-color($jazz-rose, 20%) !default;
+$jazz-rose-700: shade-color($jazz-rose, 40%) !default;
+$jazz-rose-800: shade-color($jazz-rose, 60%) !default;
+$jazz-rose-900: shade-color($jazz-rose, 80%) !default;
+
+$jazz-red-bold-100: tint-color($jazz-red-bold, 80%) !default;
+$jazz-red-bold-200: tint-color($jazz-red-bold, 60%) !default;
+$jazz-red-bold-300: tint-color($jazz-red-bold, 40%) !default;
+$jazz-red-bold-400: tint-color($jazz-red-bold, 20%) !default;
+$jazz-red-bold-500: $jazz-red-bold !default;
+$jazz-red-bold-600: shade-color($jazz-red-bold, 20%) !default;
+$jazz-red-bold-700: shade-color($jazz-red-bold, 40%) !default;
+$jazz-red-bold-800: shade-color($jazz-red-bold, 60%) !default;
+$jazz-red-bold-900: shade-color($jazz-red-bold, 80%) !default;
+
+$jazz-blue-bold-100: tint-color($jazz-blue-bold, 80%) !default;
+$jazz-blue-bold-200: tint-color($jazz-blue-bold, 60%) !default;
+$jazz-blue-bold-300: tint-color($jazz-blue-bold, 40%) !default;
+$jazz-blue-bold-400: tint-color($jazz-blue-bold, 20%) !default;
+$jazz-blue-bold-500: $jazz-blue-bold !default;
+$jazz-blue-bold-600: shade-color($jazz-blue-bold, 20%) !default;
+$jazz-blue-bold-700: shade-color($jazz-blue-bold, 40%) !default;
+$jazz-blue-bold-800: shade-color($jazz-blue-bold, 60%) !default;
+$jazz-blue-bold-900: shade-color($jazz-blue-bold, 80%) !default;
+
+$jazz-green-bold-100: tint-color($jazz-green-bold, 80%) !default;
+$jazz-green-bold-200: tint-color($jazz-green-bold, 60%) !default;
+$jazz-green-bold-300: tint-color($jazz-green-bold, 40%) !default;
+$jazz-green-bold-400: tint-color($jazz-green-bold, 20%) !default;
+$jazz-green-bold-500: $jazz-green-bold !default;
+$jazz-green-bold-600: shade-color($jazz-green-bold, 20%) !default;
+$jazz-green-bold-700: shade-color($jazz-green-bold, 40%) !default;
+$jazz-green-bold-800: shade-color($jazz-green-bold, 60%) !default;
+$jazz-green-bold-900: shade-color($jazz-green-bold, 80%) !default;
+
+$jazz-indigo-bold-100: tint-color($jazz-indigo-bold, 80%) !default;
+$jazz-indigo-bold-200: tint-color($jazz-indigo-bold, 60%) !default;
+$jazz-indigo-bold-300: tint-color($jazz-indigo-bold, 40%) !default;
+$jazz-indigo-bold-400: tint-color($jazz-indigo-bold, 20%) !default;
+$jazz-indigo-bold-500: $jazz-indigo-bold !default;
+$jazz-indigo-bold-600: shade-color($jazz-indigo-bold, 20%) !default;
+$jazz-indigo-bold-700: shade-color($jazz-indigo-bold, 40%) !default;
+$jazz-indigo-bold-800: shade-color($jazz-indigo-bold, 60%) !default;
+$jazz-indigo-bold-900: shade-color($jazz-indigo-bold, 80%) !default;
+
+$jazz-teal-bold-100: tint-color($jazz-teal-bold, 80%) !default;
+$jazz-teal-bold-200: tint-color($jazz-teal-bold, 60%) !default;
+$jazz-teal-bold-300: tint-color($jazz-teal-bold, 40%) !default;
+$jazz-teal-bold-400: tint-color($jazz-teal-bold, 20%) !default;
+$jazz-teal-bold-500: $jazz-teal-bold !default;
+$jazz-teal-bold-600: shade-color($jazz-teal-bold, 20%) !default;
+$jazz-teal-bold-700: shade-color($jazz-teal-bold, 40%) !default;
+$jazz-teal-bold-800: shade-color($jazz-teal-bold, 60%) !default;
+$jazz-teal-bold-900: shade-color($jazz-teal-bold, 80%) !default;
+
+$jazz-violet-bold-100: tint-color($jazz-violet-bold, 80%) !default;
+$jazz-violet-bold-200: tint-color($jazz-violet-bold, 60%) !default;
+$jazz-violet-bold-300: tint-color($jazz-violet-bold, 40%) !default;
+$jazz-violet-bold-400: tint-color($jazz-violet-bold, 20%) !default;
+$jazz-violet-bold-500: $jazz-violet-bold !default;
+$jazz-violet-bold-600: shade-color($jazz-violet-bold, 20%) !default;
+$jazz-violet-bold-700: shade-color($jazz-violet-bold, 40%) !default;
+$jazz-violet-bold-800: shade-color($jazz-violet-bold, 60%) !default;
+$jazz-violet-bold-900: shade-color($jazz-violet-bold, 80%) !default;
+
+$jazz-navy-bold-100: tint-color($jazz-navy-bold, 80%) !default;
+$jazz-navy-bold-200: tint-color($jazz-navy-bold, 60%) !default;
+$jazz-navy-bold-300: tint-color($jazz-navy-bold, 40%) !default;
+$jazz-navy-bold-400: tint-color($jazz-navy-bold, 20%) !default;
+$jazz-navy-bold-500: $jazz-navy-bold !default;
+$jazz-navy-bold-600: shade-color($jazz-navy-bold, 20%) !default;
+$jazz-navy-bold-700: shade-color($jazz-navy-bold, 40%) !default;
+$jazz-navy-bold-800: shade-color($jazz-navy-bold, 60%) !default;
+$jazz-navy-bold-900: shade-color($jazz-navy-bold, 80%) !default;
+
+$jazz-rose-bold-100: tint-color($jazz-rose-bold, 80%) !default;
+$jazz-rose-bold-200: tint-color($jazz-rose-bold, 60%) !default;
+$jazz-rose-bold-300: tint-color($jazz-rose-bold, 40%) !default;
+$jazz-rose-bold-400: tint-color($jazz-rose-bold, 20%) !default;
+$jazz-rose-bold-500: $jazz-rose-bold !default;
+$jazz-rose-bold-600: shade-color($jazz-rose-bold, 20%) !default;
+$jazz-rose-bold-700: shade-color($jazz-rose-bold, 40%) !default;
+$jazz-rose-bold-800: shade-color($jazz-rose-bold, 60%) !default;
+$jazz-rose-bold-900: shade-color($jazz-rose-bold, 80%) !default;
+
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       $jazz-indigo !default;
+$secondary:     $gray-600 !default;
+$success:       $jazz-green !default;
+$info:          $jazz-blue !default;
+$warning:       $jazz-yellow !default;
+$danger:        $jazz-red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "jazz-pu-orange":    $jazz-pu-orange,
+  "jazz-red":          $jazz-red,
+  "jazz-teal":         $jazz-teal,
+  "jazz-orange":       $jazz-orange,
+  "jazz-blue":         $jazz-blue,
+  "jazz-yellow":       $jazz-yellow,
+  "jazz-indigo":       $jazz-indigo,
+  "jazz-green":        $jazz-green,
+  "jazz-violet":       $jazz-violet,
+  "jazz-rose":         $jazz-rose,
+  "jazz-red-bold":     $jazz-red-bold,
+  "jazz-blue-bold":    $jazz-blue-bold,
+  "jazz-green-bold":   $jazz-green-bold,
+  "jazz-indigo-bold":  $jazz-indigo-bold,
+  "jazz-teal-bold":    $jazz-teal-bold,
+  "jazz-violet-bold":  $jazz-violet-bold,
+  "jazz-navy-bold":    $jazz-navy-bold,
+  "jazz-rose-bold":    $jazz-rose-bold,
+  //"blue":       $blue,
+  //"indigo":     $indigo,
+  //"purple":     $purple,
+  //"pink":       $pink,
+  //"red":        $red,
+  //"orange":     $orange,
+  //"yellow":     $yellow,
+  //"green":      $green,
+  //"teal":       $teal,
+  //"cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+) !default;
+// scss-docs-end colors-map
+
+//// scss-docs-start theme-colors-map
+//$theme-colors: (
+//  "primary":    $primary,
+//  "secondary":  $secondary,
+//  "success":    $success,
+//  "info":       $info,
+//  "warning":    $warning,
+//  "danger":     $danger,
+//  "light":      $light,
+//  "dark":       $dark
+//) !default;
+//// scss-docs-end theme-colors-map

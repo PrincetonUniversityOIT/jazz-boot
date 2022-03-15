@@ -15,6 +15,13 @@
     - title: RTL
     - title: Contribute
 
+- title: Jazz Components
+  pages:
+    - title: Accordion - Jazz
+    - title: Footer
+    - title: Form Field
+    - title: Pagination - Jazz
+
 - title: Customize
   pages:
     - title: Overview

@@ -5,8 +5,70 @@ $border-radius: .125rem !default;
 $font-family-base: "Public Sans", system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 // Buttons
-$btn-font-size: px-to-rem(14) !default;
+//$btn-font-size: px-to-rem(14) !default;
 $btn-font-weight: 600 !default;
-$btn-line-height: px-to-rem(18) !default;
+//$btn-line-height: px-to-rem(18) !default;
 $btn-padding-x: px-to-rem(20) !default;
-$btn-padding-y: px-to-rem(12) !default;
+//$btn-padding-y: px-to-rem(12) !default;
+
+// Form Inputs
+
+// inputs and buttons need to stay synchronized so they have a matching height
+
+$input-btn-font-size: px-to-rem(14) !default;
+$input-btn-padding-y: px-to-rem(12) !default;
+//$input-btn-padding-x: px-to-rem(20) !default;
+$input-btn-line-height:       1.125 !default;
+
+// Font Sizes (added a smaller one)
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$small-font-size:             .875em !default;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $small-font-size
+) !default;
+
+// Accordion
+
+// $body-color:                              #000 !default;
+//$accordion-color:                         $body-color !default;
+$accordion-border-radius:                 0 !default;
+$accordion-button-color:                  #000 !default;
+$accordion-icon-color:                    $accordion-button-color !default;
+$accordion-icon-active-color:             #000 !default; //$accordion-button-active-color !default;
+$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$accordion-icon-color}' class='bi bi-plus-lg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/></svg>") !default;
+//$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$accordion-icon-active-color}' class='bi bi-dash-lg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/></svg>") !default;
+
+// Pagination
+
+$pagination-border-radius:          0 !default;
+$pagination-border-radius-sm:       0 !default;
+$pagination-border-radius-lg:       0 !default;
+
+$pagination-bg:                     transparent !default;
+$pagination-color:                  #000 !default;
+$pagination-border-color:           transparent !default;
+$pagination-hover-bg:               transparent !default;
+$pagination-hover-color:            #000 !default;
+$pagination-hover-border-color:     transparent !default;
+$pagination-active-bg:              transparent !default;
+$pagination-active-color:           #000 !default;
+$pagination-active-border-color:    transparent !default;
+$pagination-disabled-bg:            transparent !default;
+$pagination-disabled-border-color:  transparent !default;

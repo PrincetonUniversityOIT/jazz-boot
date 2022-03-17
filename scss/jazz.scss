@@ -7,17 +7,18 @@
 
 // scss-docs-start import-stack
 // Configuration
-@import "jazz_fonts_public_sans";
+@import "jazz/fonts_public_sans";
 @import "functions";
-@import "jazz_functions";
-@import "jazz_theme";
-@import "jazz_variables";
+@import "jazz/functions";
+@import "jazz/theme";
+@import "jazz/variables";
 @import "variables";
 @import "maps";
 @import "mixins";
 @import "utilities";
 
-// Layout & components
+// Layout & components (but Jazzier)
+
 @import "root";
 @import "reboot";
 @import "type";
@@ -27,7 +28,7 @@
 @import "tables";
 @import "forms";
 @import "buttons";
-@import "jazz_buttons";
+@import "jazz/buttons";
 @import "transitions";
 @import "dropdown";
 @import "button-group";
@@ -35,10 +36,10 @@
 @import "navbar";
 @import "card";
 @import "accordion";
-@import "jazz_accordion";
+@import "jazz/accordion";
 @import "breadcrumb";
 @import "pagination";
-@import "jazz_pagination";
+@import "jazz/pagination";
 @import "badge";
 @import "alert";
 @import "progress";
@@ -52,6 +53,10 @@
 @import "spinners";
 @import "offcanvas";
 @import "placeholders";
+
+// Jazz Components
+
+@import "jazz/tabs";
 
 // Helpers
 @import "helpers";

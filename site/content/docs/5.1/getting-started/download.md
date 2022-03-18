@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Download
-description: Download Bootstrap to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, RubyGems, and more.
+description: Download the Jazz Design System to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, RubyGems, and more.
 group: getting-started
 toc: true
 ---
@@ -34,32 +34,16 @@ If you want to download and examine our [examples]({{< docsref "/examples" >}}),
 
 <a href="{{< param "download.dist_examples" >}}" class="btn btn-bd-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download Examples');">Download Examples</a>
 
-## CDN via jsDelivr
-
-Skip the download with [jsDelivr](https://www.jsdelivr.com/) to deliver cached version of Bootstrap's compiled CSS and JS to your project.
-
-```html
-<link href="{{< param "cdn.css" >}}" rel="stylesheet" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
-<script src="{{< param "cdn.js_bundle" >}}" integrity="{{< param "cdn.js_bundle_hash" >}}" crossorigin="anonymous"></script>
-```
-
-If you're using our compiled JavaScript and prefer to include Popper separately, add Popper before our JS, via a CDN preferably.
-
-```html
-<script src="{{< param "cdn.popper" >}}" integrity="{{< param "cdn.popper_hash" >}}" crossorigin="anonymous"></script>
-<script src="{{< param "cdn.js" >}}" integrity="{{< param "cdn.js_hash" >}}" crossorigin="anonymous"></script>
-```
-
 ## Package managers
 
 Pull in Bootstrap's **source files** into nearly any project with some of the most popular package managers. No matter the package manager, Bootstrap will **require a [Sass compiler]({{< docsref "/getting-started/contribute#sass" >}}) and [Autoprefixer](https://github.com/postcss/autoprefixer)** for a setup that matches our official compiled versions.
 
 ### npm
 
-Install Bootstrap in your Node.js powered apps with [the npm package](https://www.npmjs.com/package/bootstrap):
+Install the Jazz Design System in your Node.js powered apps with [the npm package](https://www.npmjs.com/package/bootstrap):
 
 ```sh
-npm install bootstrap
+npm install @princeton-design/design-system
 ```
 
 `const bootstrap = require('bootstrap')` or `import bootstrap from 'bootstrap'` will load all of Bootstrap's plugins onto a `bootstrap` object.
@@ -70,50 +54,10 @@ Bootstrap's `package.json` contains some additional metadata under the following
 - `sass` - path to Bootstrap's main [Sass](https://sass-lang.com/) source file
 - `style` - path to Bootstrap's non-minified CSS that's been precompiled using the default settings (no customization)
 
-{{< callout info >}}
-{{< partial "callout-info-npm-starter.md" >}}
-{{< /callout >}}
-
 ### yarn
 
-Install Bootstrap in your Node.js powered apps with [the yarn package](https://yarnpkg.com/en/package/bootstrap):
+Install the Jazz Design System in your Node.js powered apps with [the yarn package](https://yarnpkg.com/en/package/bootstrap):
 
 ```sh
-yarn add bootstrap
-```
-
-### RubyGems
-
-Install Bootstrap in your Ruby apps using [Bundler](https://bundler.io/) (**recommended**) and [RubyGems](https://rubygems.org/) by adding the following line to your [`Gemfile`](https://bundler.io/gemfile.html):
-
-```ruby
-gem 'bootstrap', '~> {{< param current_ruby_version >}}'
-```
-
-Alternatively, if you're not using Bundler, you can install the gem by running this command:
-
-```sh
-gem install bootstrap -v {{< param current_ruby_version >}}
-```
-
-[See the gem's README](https://github.com/twbs/bootstrap-rubygem/blob/master/README.md) for further details.
-
-### Composer
-
-You can also install and manage Bootstrap's Sass and JavaScript using [Composer](https://getcomposer.org/):
-
-```sh
-composer require twbs/bootstrap:{{< param current_version >}}
-```
-
-### NuGet
-
-If you develop in .NET Framework, you can also install and manage Bootstrap's [CSS](https://www.nuget.org/packages/bootstrap/) or [Sass](https://www.nuget.org/packages/bootstrap.sass/) and JavaScript using [NuGet](https://www.nuget.org/). Newer projects should use [libman](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/) or another method as NuGet is designed for compiled code, not frontend assets.
-
-```powershell
-Install-Package bootstrap
-```
-
-```powershell
-Install-Package bootstrap.sass
+yarn add @princeton-design/design-system
 ```

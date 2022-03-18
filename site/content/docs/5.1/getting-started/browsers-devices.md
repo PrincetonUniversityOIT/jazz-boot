@@ -1,97 +1,26 @@
 ---
 layout: docs
 title: Browsers and devices
-description: Learn about the browsers and devices, from modern to old, that are supported by Bootstrap, including known quirks and bugs for each.
+description: Learn about the browsers and devices, from modern to old, that are supported by the Jazz Design System, including known quirks and bugs for each.
 group: getting-started
 toc: true
 ---
 
 ## Supported browsers
 
-Bootstrap supports the **latest, stable releases** of all major browsers and platforms.
+Bootstrap strive to support the **latest, stable releases** of all major browsers and platforms.
 
-Alternative browsers which use the latest version of WebKit, Blink, or Gecko, whether directly or via the platform's web view API, are not explicitly supported. However, Bootstrap should (in most cases) display and function correctly in these browsers as well. More specific support information is provided below.
-
-You can find our supported range of browsers and their versions [in our `.browserslistrc file`]({{< param repo >}}/blob/v{{< param current_version >}}/.browserslistrc):
-
-```text
-{{< rf.inline >}}
-{{- readFile ".browserslistrc" | chomp | htmlEscape -}}
-{{< /rf.inline >}}
-```
+Alternative browsers which use the latest version of WebKit, Blink, or Gecko, whether directly or via the platform's web view API, are not explicitly supported. However, the Jazz Design System should (in most cases) display and function correctly in these browsers as well. More specific support information is provided below.
 
 We use [Autoprefixer](https://github.com/postcss/autoprefixer) to handle intended browser support via CSS prefixes, which uses [Browserslist](https://github.com/browserslist/browserslist) to manage these browser versions. Consult their documentation for how to integrate these tools into your projects.
 
 ### Mobile devices
 
-Generally speaking, Bootstrap supports the latest versions of each major platform's default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile's Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
-
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Chrome</th>
-      <th scope="col">Firefox</th>
-      <th scope="col">Safari</th>
-      <th scope="col">Android Browser &amp; WebView</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Android</th>
-      <td>Supported</td>
-      <td>Supported</td>
-      <td class="text-muted">&mdash;</td>
-      <td>v6.0+</td>
-    </tr>
-    <tr>
-      <th scope="row">iOS</th>
-      <td>Supported</td>
-      <td>Supported</td>
-      <td>Supported</td>
-      <td class="text-muted">&mdash;</td>
-    </tr>
-  </tbody>
-</table>
+Generally speaking, the Jazz Design System supports the latest versions of each major platform's default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile's Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
 
 ### Desktop browsers
 
 Similarly, the latest versions of most desktop browsers are supported.
-
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Chrome</th>
-      <th scope="col">Firefox</th>
-      <th scope="col">Microsoft Edge</th>
-      <th scope="col">Opera</th>
-      <th scope="col">Safari</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Mac</th>
-      <td>Supported</td>
-      <td>Supported</td>
-      <td>Supported</td>
-      <td>Supported</td>
-      <td>Supported</td>
-    </tr>
-    <tr>
-      <th scope="row">Windows</th>
-      <td>Supported</td>
-      <td>Supported</td>
-      <td>Supported</td>
-      <td>Supported</td>
-      <td class="text-muted">&mdash;</td>
-    </tr>
-  </tbody>
-</table>
-
-For Firefox, in addition to the latest normal stable release, we also support the latest [Extended Support Release (ESR)](https://www.mozilla.org/en-US/firefox/enterprise/) version of Firefox.
-
-Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, and Firefox for Linux, though they are not officially supported.
 
 ## Internet Explorer
 

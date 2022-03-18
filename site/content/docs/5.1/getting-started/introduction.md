@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Introduction
-description: Get started with Bootstrap, the world's most popular framework for building responsive, mobile-first sites, with jsDelivr and a template starter page.
+description: Get started with Princeton University's Jazz Design System, which is based on Bootstrap.
 group: getting-started
 aliases:
   - "/docs/5.1/getting-started/"
@@ -10,16 +10,36 @@ aliases:
 toc: true
 ---
 
+## Jazz Design System &amp; Bootstrap
+
+Jazz is Princeton University's Design System.
+
+The Jazz Design System is a fork of the Bootstrap project (version 5.1.3, specifically).  Bootstrap serves as
+a foundational layer for the Jazz Design System, and covers most of the usual CSS layout, CSS utility,
+and components necessary to create a web page or web application.  The Jazz Design System builds upon, and
+in some cases modifies, Bootstrap to deliver the distinctive look and feel of Princeton University's
+digital designs.
+
+Developers utilize the Jazz Design System **in place of** Bootstrap, and can use most of the
+Bootstrap capabilities that they already know and love.  In most cases, the Jazz Design System can serve
+as a drop in replacement of Bootstrap in systems created with Bootstrap 5.
+
+## This Documentation
+
+This documentation is largely copied (mostly without modification) from the Bootstrap project to help document
+the deep capabilities of Bootstrap.  The Bootstrap documentation is supplemented and/or modified to document
+capabilities that are specific to the Jazz Design System.
+
 ## Quick start
 
-Looking to quickly add Bootstrap to your project? Use jsDelivr, a free open source CDN. Using a package manager or need to download the source files? [Head to the downloads page]({{< docsref "/getting-started/download" >}}).
+Using a package manager or need to download the source files? [Head to the downloads page]({{< docsref "/getting-started/download" >}}).
 
 ### CSS
 
 Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
 
 ```html
-<link href="{{< param "cdn.css" >}}" rel="stylesheet" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
+<link href="{{< param "cdn.css" >}}" rel="stylesheet">
 ```
 
 ### JS
@@ -31,7 +51,7 @@ Many of our components require the use of JavaScript to function. Specifically, 
 Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both `bootstrap.bundle.js` and `bootstrap.bundle.min.js` include [Popper](https://popper.js.org/) for our tooltips and popovers. For more information about what's included in Bootstrap, please see our [contents]({{< docsref "/getting-started/contents#precompiled-bootstrap" >}}) section.
 
 ```html
-<script src="{{< param "cdn.js_bundle" >}}" integrity="{{< param "cdn.js_bundle_hash" >}}" crossorigin="anonymous"></script>
+<script src="{{< param "cdn.js_bundle" >}}"></script>
 ```
 
 #### Separate
@@ -81,7 +101,7 @@ Be sure to have your pages set up with the latest design and development standar
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="{{< param "cdn.css" >}}" rel="stylesheet" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
+    <link href="{{< param "cdn.css" >}}" rel="stylesheet">
 
     <title>Hello, world!</title>
   </head>
@@ -148,15 +168,3 @@ Learn more about [box model and sizing at CSS Tricks](https://css-tricks.com/box
 ### Reboot
 
 For improved cross-browser rendering, we use [Reboot]({{< docsref "/content/reboot" >}}) to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
-
-## Community
-
-Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.
-
-- Read and subscribe to [The Official Bootstrap Blog]({{< param blog >}}).
-- Join [the official Slack room]({{< param slack >}}).
-- Chat with fellow Bootstrappers in IRC. On the `irc.libera.chat` server, in the `#bootstrap` channel.
-- Implementation help may be found at Stack Overflow (tagged [`bootstrap-5`](https://stackoverflow.com/questions/tagged/bootstrap-5)).
-- Developers should use the keyword `bootstrap` on packages that modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/search?q=keywords:bootstrap) or similar delivery mechanisms for maximum discoverability.
-
-You can also follow [@getbootstrap on Twitter](https://twitter.com/{{< param twitter >}}) for the latest gossip and awesome music videos.

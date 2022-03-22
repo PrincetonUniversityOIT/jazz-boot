@@ -65,14 +65,6 @@ Wherever possible, icons have been sourced from [Bootstrap Icons](https://icons.
 or [Phosphor Icons](https://phosphoricons.com/), which are also distributed under
 the [MIT License](https://opensource.org/licenses/MIT).
 
-## Other Resources
-
-The System makes use of the following libraries:
-
-* Normalize.css (Distributed under the [MIT License](https://opensource.org/licenses/MIT))
-* Flexboxgrid (Distributed under the [Apache license, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0))
-
-
 ## Jazz License
 
 Beyond the resources mentioned above, all other sources for this System are distributed under the MIT License:

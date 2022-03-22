@@ -65,7 +65,7 @@ an additional content container.
 
 ### Inverted Colors
 
-Use the Accordion on a dark backgound.
+Use the Accordion on a dark background.
 
 {{< example class="bg-dark" >}}
 <style>

@@ -20,7 +20,7 @@ toc: true
           <span class="fs-5">&copy;&nbsp;&nbsp;</span>2021 The Trustees of Princeton University
         </div>
         <div class="text-end logo text-danger">
-          <img src="/logos/pu-logo-stacked-bw.svg" height="70" />
+          <img src="/logos/pu-logo-stacked-bw.svg" height="70" alt="Princeton Logo"/>
         </div>
       </div>
     </div>

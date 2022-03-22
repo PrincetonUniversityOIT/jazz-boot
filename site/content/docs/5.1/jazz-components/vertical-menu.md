@@ -44,7 +44,7 @@ As always, vertical navigation is possible without `<ul>`s, too.
 Stack your navigation by changing the flex item direction with the `.flex-column` utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., `.flex-sm-column`).
 
 {{< example >}}
-<nav role="navigation">
+<nav>
   <h2 class="jazz-menu-vertical-label fs-7 text-uppercase">Menu Group Label</h2>
   <ul class="nav flex-column jazz-menu-vertical">
     <li class="nav-item">
@@ -68,7 +68,7 @@ Stack your navigation by changing the flex item direction with the `.flex-column
 Stack your navigation by changing the flex item direction with the `.flex-column` utility. Need to stack them on some viewports but not others? Use the responsive versions (e.g., `.flex-sm-column`).
 
 {{< example >}}
-<nav role="navigation" class="bg-dark text-light">
+<nav class="bg-dark text-light">
   <ul class="nav flex-column jazz-menu-vertical">
     <li class="nav-item">
       <a class="nav-link active text-light" aria-current="page" href="#">Active</a>

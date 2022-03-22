@@ -39,7 +39,7 @@ This particular design includes a couple of specific design elements that are wo
     <li class="page-item"><a class="page-link" href="#">12</a></li>
     <li class="page-item">...</li>
     <li class="page-item"><a class="page-link" href="#">20</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next<svg class="bi" width="24" height="24"><use xlink:href="#arrow-right-short"/></svg></a></li>
+    <li class="page-item"><a class="page-link" href="#">Next<svg class="bi" width="24" height="24"><use xlink:href="#arrow-right-short2"/></svg></a></li>
   </ul>
 </nav>
 {{< /example >}}
@@ -53,20 +53,20 @@ from the Bootstrap Icons library.
 
 {{< example >}}
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-<symbol id="arrow-left-short" viewBox="0 0 16 16">
+<symbol id="arrow-left-short2" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
 </symbol>
-<symbol id="arrow-right-short" viewBox="0 0 16 16">
+<symbol id="arrow-right-short2" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
 </symbol>
 </svg>
 <nav aria-label="Page navigation example">
   <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#arrow-left-short"/></svg>Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#arrow-left-short2"/></svg>Previous</a></li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next<svg class="bi" width="24" height="24"><use xlink:href="#arrow-right-short"/></svg></a></li>
+    <li class="page-item"><a class="page-link" href="#">Next<svg class="bi" width="24" height="24"><use xlink:href="#arrow-right-short2"/></svg></a></li>
   </ul>
 </nav>
 {{< /example >}}
@@ -212,7 +212,7 @@ space.  The default value for the input field should match the current page as d
 
 {{< example >}}
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-<symbol id="arrow-right-short" viewBox="0 0 16 16">
+<symbol id="arrow-right-short3" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
 </symbol>
 </svg>
@@ -234,7 +234,7 @@ space.  The default value for the input field should match the current page as d
     <div class="col-2">
       <div class="input-group input-group-sm">
         <input type="text" class="form-control border-dark" value="3" aria-label="Go To Page Number">
-        <button class="btn btn-outline-dark" type="button"><svg class="bi" width="24" height="24" style="fill: currentColor;"><use xlink:href="#arrow-right-short"/></svg></button>
+        <button class="btn btn-outline-dark" type="button"><svg class="bi" width="24" height="24" style="fill: currentColor;"><use xlink:href="#arrow-right-short3"/></svg></button>
       </div>
     </div>
   </div>
@@ -253,7 +253,7 @@ In cases where a library is wrapping Bootstrap, it may not be possible to change
 
 {{< example >}}
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-<symbol id="arrow-right-short" viewBox="0 0 16 16">
+<symbol id="arrow-right-short4" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
 </symbol>
 </svg>
@@ -278,7 +278,7 @@ In cases where a library is wrapping Bootstrap, it may not be possible to change
     <div class="col-2">
       <div class="input-group input-group-sm">
         <input type="text" class="form-control border-light bg-dark text-light" value="3" aria-label="Go To Page Number">
-        <button class="btn btn-outline-light" type="button"><svg class="bi" width="24" height="24" style="fill: currentColor;"><use xlink:href="#arrow-right-short"/></svg></button>
+        <button class="btn btn-outline-light" type="button"><svg class="bi" width="24" height="24" style="fill: currentColor;"><use xlink:href="#arrow-right-short4"/></svg></button>
       </div>
     </div>
   </div>

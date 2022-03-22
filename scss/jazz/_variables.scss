@@ -1,4 +1,7 @@
 $border-radius: .125rem !default;
+$border-radius-sm: .125rem !default;
+$border-radius-lg: .125rem !default;
+
 //$font-family-sans-serif: system-ui, -apple-system, "Public Sans", "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 // $font-family-sans-serif: "Public Sans", system-ui, -apple-system, "sans-serif" !default;
 // $font-family-base: system-ui, -apple-system, "Public Sans", "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
@@ -17,6 +20,8 @@ $btn-padding-x: px-to-rem(20) !default;
 
 $input-btn-font-size: px-to-rem(14) !default;
 $input-btn-padding-y: px-to-rem(12) !default;
+$input-btn-padding-y-sm: px-to-rem(8) !default;
+$input-btn-padding-y-lg: px-to-rem(16) !default;
 //$input-btn-padding-x: px-to-rem(20) !default;
 $input-btn-line-height:       1.125 !default;
 

@@ -1,14 +1,15 @@
 ---
 layout: docs
 title: Download
-description: Download the Jazz Design System to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, RubyGems, and more.
+description: Download the Bootstrap implementation of the Jazz Design System to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm.
 group: getting-started
 toc: true
 ---
 
 ## Compiled CSS and JS
 
-Download ready-to-use compiled code for **Bootstrap v{{< param current_version >}}** to easily drop into your project, which includes:
+Download ready-to-use compiled code for the Bootstrap implementation of the Jazz Design System to easily drop
+into your project, which includes:
 
 - Compiled and minified CSS bundles (see [CSS files comparison]({{< docsref "/getting-started/contents#css-files" >}}))
 - Compiled and minified JavaScript plugins (see [JS files comparison]({{< docsref "/getting-started/contents#js-files" >}}))
@@ -19,12 +20,15 @@ This doesn't include documentation, source files, or any optional JavaScript dep
 
 ## Source files
 
-Compile Bootstrap with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This option requires some additional tooling:
+Compile the Bootstrap implementation of the Jazz Design System with your own asset pipeline by downloading
+source Sass, JavaScript, and documentation files. This option requires some additional tooling:
 
 - [Sass compiler]({{< docsref "/getting-started/contribute#sass" >}}) for compiling Sass source files into CSS files
 - [Autoprefixer](https://github.com/postcss/autoprefixer) for CSS vendor prefixing
 
-Should you require our full set of [build tools]({{< docsref "/getting-started/contribute#tooling-setup" >}}), they are included for developing Bootstrap and its docs, but they're likely unsuitable for your own purposes.
+Should you require the full set of [build tools]({{< docsref "/getting-started/contribute#tooling-setup" >}}), they
+are included for developing Bootstrap, the Jazz Design System, and its docs, but they are likely unsuitable
+for your own purposes.
 
 <a href="{{< param "download.source" >}}" class="btn btn-bd-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download source');">Download source</a>
 
@@ -36,14 +40,19 @@ If you want to download and examine our [examples]({{< docsref "/examples" >}}),
 
 ## Package managers
 
-Pull in Bootstrap's **source files** into nearly any project with some of the most popular package managers. No matter the package manager, Bootstrap will **require a [Sass compiler]({{< docsref "/getting-started/contribute#sass" >}}) and [Autoprefixer](https://github.com/postcss/autoprefixer)** for a setup that matches our official compiled versions.
+Pull in **source files** for the Bootstrap implementation of the Design System into nearly any project with
+some of the most popular package managers. No matter the package manager,
+the Bootstrap implementation of the Design system will
+**require a [Sass compiler]({{< docsref "/getting-started/contribute#sass" >}})
+and [Autoprefixer](https://github.com/postcss/autoprefixer)** for a setup that matches
+the official compiled versions of Bootstrap.
 
 ### npm
 
 Install the Jazz Design System in your Node.js powered apps with [the npm package](https://www.npmjs.com/package/bootstrap):
 
 ```sh
-npm install @princeton-design/design-system
+npm install @princeton-design/jazz-boot
 ```
 
 `const bootstrap = require('bootstrap')` or `import bootstrap from 'bootstrap'` will load all of Bootstrap's plugins onto a `bootstrap` object.
@@ -56,8 +65,9 @@ Bootstrap's `package.json` contains some additional metadata under the following
 
 ### yarn
 
-Install the Jazz Design System in your Node.js powered apps with [the yarn package](https://yarnpkg.com/en/package/bootstrap):
+Install the Bootstrap implementation of the Jazz Design System in your Node.js
+powered apps with [the yarn package](https://yarnpkg.com/en/package/bootstrap):
 
 ```sh
-yarn add @princeton-design/design-system
+yarn add @princeton-design/jazz-boot
 ```

@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Introduction
-description: Get started with Princeton University's Jazz Design System, which is based on Bootstrap.
+description: Get started with the Bootstrap implementation of Princeton University's Jazz Design System.
 group: getting-started
 aliases:
   - "/docs/5.1/getting-started/"
@@ -12,23 +12,29 @@ toc: true
 
 ## Jazz Design System &amp; Bootstrap
 
-Jazz is Princeton University's Design System.
+The Jazz Design System is Princeton University's Design System.
 
-The Jazz Design System is a fork of the Bootstrap project (version 5.1.3, specifically).  Bootstrap serves as
-a foundational layer for the Jazz Design System, and covers most of the usual CSS layout, CSS utility,
-and components necessary to create a web page or web application.  The Jazz Design System builds upon, and
-in some cases modifies, Bootstrap to deliver the distinctive look and feel of Princeton University's
-digital designs.
+Because of its popularity and breadth/depth of functionality, Bootstrap has been used as a basis to implement a
+reference implementation of the Jazz Design System.
 
-Developers utilize the Jazz Design System **in place of** Bootstrap, and can use most of the
-Bootstrap capabilities that they already know and love.  In most cases, the Jazz Design System can serve
-as a drop in replacement of Bootstrap in systems created with Bootstrap 5.
+## Approach
+
+The Bootstrap implementation of the Jazz Design System is a "fork" of the Bootstrap project
+(version 5.1.3, specifically).  Bootstrap covers most of the usual CSS layout, CSS utility,
+and components necessary to create a web page or web application.  The Jazz Design System visual
+designs have been applied to Bootstrap, and in some cases modify Bootstrap, to deliver the
+distinctive look and feel of Princeton University's digital designs.
+
+Developers utilize the Bootstrap implementation of the Jazz Design System **in place of** a standard
+Bootstrap installation, and can use most of the Bootstrap capabilities that they already know and love.
+In most cases, the Jazz Design System can serve as a drop in replacement of Bootstrap in systems
+created with Bootstrap 5.
 
 ## This Documentation
 
-This documentation is largely copied (mostly without modification) from the Bootstrap project to help document
-the deep capabilities of Bootstrap.  The Bootstrap documentation is supplemented and/or modified to document
-capabilities that are specific to the Jazz Design System.
+This documentation is largely copied (in many cases without modification) from the Bootstrap project
+to help document the deep capabilities of Bootstrap.  The original Bootstrap documentation has been
+supplemented and/or modified to document capabilities that are specific to the Jazz Design System.
 
 ## Quick start
 
@@ -44,7 +50,13 @@ Copy-paste the stylesheet `<link>` into your `<head>` before all other styleshee
 
 ### JS
 
-Many of our components require the use of JavaScript to function. Specifically, they require our own JavaScript plugins and [Popper](https://popper.js.org/). Place **one of the following `<script>`s** near the end of your pages, right before the closing `</body>` tag, to enable them.
+Many Jazz Design System (and hence Bootstrap) components require the use of JavaScript to function.  If you are
+utilizing a Javascript framework, then you can see the section about Frameworks below for possible
+third-party projects that might work for your situation.
+
+If you are not utilizing a specific Javascript framework, then you would utilize the Javascript files
+provided by this library as described below.  They require the Bootstrap JavaScript
+plugins and [Popper](https://popper.js.org/). Place **one of the following `<script>`s** near the end of your pages, right before the closing `</body>` tag, to enable them.
 
 #### Bundle
 
@@ -66,6 +78,17 @@ If you decide to go with the separate scripts solution, Popper must come first (
 #### Modules
 
 If you use `<script type="module">`, please refer to our [using Bootstrap as a module]({{< docsref "/getting-started/javascript#using-bootstrap-as-a-module" >}}) section.
+
+#### Frameworks
+
+The libraries described below are not necessarily endorsed as part of the Jazz Design System initiative, but are likely
+viable options for projects that use these specific frameworks:
+
+* **Angular** - the [ng-bootstrap](https://github.com/ng-bootstrap/ng-bootstrap) project provides an Angular
+  implementation of the Bootstrap library that supports Bootstrap 5.x, on which this Jazz Design System
+  implementation is based.
+* **Vue.js** - The [bootstrap-vue](https://coreui.io/bootstrap-vue/) supports Bootstrap 5.x for Vue applications.
+* **React.js** - The [react-bootstrap](https://react-bootstrap.github.io/) project supports Bootstrap 5.x for React applications.
 
 #### Components
 

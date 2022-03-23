@@ -30,10 +30,10 @@
     </div>
     <div class="col-md-7 ps-md-5">
       {{ highlight (printf (`<!-- CSS only -->
-<link href="%s" rel="stylesheet" integrity=%q crossorigin="anonymous">
+<link href="%s" rel="stylesheet" crossorigin="anonymous">
 `) .Site.Params.cdn.css (.Site.Params.cdn.css_hash | safeHTMLAttr)) "html" "" }}
       {{ highlight (printf (`<!-- JavaScript Bundle with Popper -->
-<script src="%s" integrity=%q crossorigin="anonymous"></script>
+<script src="%s" crossorigin="anonymous"></script>
 `) .Site.Params.cdn.js_bundle (.Site.Params.cdn.js_bundle_hash | safeHTMLAttr)) "html" "" }}
     </div>
   </section>

@@ -1,6 +1,6 @@
 languageCode:           "en"
 title:                  "Bootstrap"
-baseURL:                "https://princetonuniversityoit.github.io"
+baseURL:                "https://princetonuniversityoit.github.io/jazz-boot"
 
 security:
   enableInlineShortcodes: true

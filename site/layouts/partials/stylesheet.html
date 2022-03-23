@@ -6,8 +6,10 @@
 <!--<link href="/docs/{{ .Site.Params.docs_version }}/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">-->
 <!--{{- end -}}-->
 <!--{{- else -}}-->
-<link href="/docs/{{ .Site.Params.docs_version }}/dist/css/jazz{{ if eq .Page.Params.direction "rtl" }}.rtl{{ end }}.css" rel="stylesheet">
+<!--<link href="/docs/{{ .Site.Params.docs_version }}/dist/css/jazz{{ if eq .Page.Params.direction "rtl" }}.rtl{{ end }}.css" rel="stylesheet">-->
 <!--{{- end }}-->
+
+<link href="/docs/{{ .Site.Params.docs_version }}/dist/css/jazz.css" rel="stylesheet">
 
 {{- if (ne .Page.Layout "examples") }}
 {{- $targetDocsCssPath := path.Join "/docs" .Site.Params.docs_version "assets/css/docs.css" -}}

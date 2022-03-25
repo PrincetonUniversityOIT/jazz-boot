@@ -1,6 +1,8 @@
-name: Package Build
+name: Publish to NPM
 
-on: push
+on:
+  release:
+    types: [created]
 
 env:
   FORCE_COLOR: 2

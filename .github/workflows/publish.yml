@@ -1,0 +1,36 @@
+name: Package Build
+
+on: push
+
+env:
+  FORCE_COLOR: 2
+  NODE: 16
+
+jobs:
+  css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "${{ env.NODE }}"
+          cache: npm
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build CSS
+        run: npm run css
+
+      - name: Run dist
+        run: npm run js
+
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          package: "./dist/package.json"
+          token: ${{ secrets.NPM_TOKEN }}
+          access: public

@@ -173,6 +173,7 @@
     }
   },
   "dependencies": {
+    "rollup-plugin-copy": "^3.4.0",
     "tslib": "^2.3.1"
   }
 }

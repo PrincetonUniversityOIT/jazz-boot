@@ -7,6 +7,8 @@ const replace = require('@rollup/plugin-replace');
 // import postcss from 'rollup-plugin-postcss';
 
 // const packageJson = require('./package.json');
+import copy from 'rollup-plugin-copy'
+
 const path = require('path');
 
 const BUNDLE = process.env.BUNDLE === 'true';
@@ -15,7 +17,12 @@ const plugins = [
   external(),
   resolve(),
   commonjs(),
-  typescript({ tsconfig: path.resolve(__dirname, '../tsconfig.json') }) //,
+  typescript({ tsconfig: path.resolve(__dirname, '../tsconfig.json') }),
+  copy({
+    targets: [
+      { src: 'package-lib.json', dest: 'dist', rename: 'package.json' }
+    ]
+  })
   // postcss(),
   // terser()
 ];

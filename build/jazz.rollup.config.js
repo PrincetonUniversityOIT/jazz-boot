@@ -20,7 +20,8 @@ const plugins = [
   typescript({ tsconfig: path.resolve(__dirname, '../tsconfig.json') }),
   copy({
     targets: [
-      { src: 'package-lib.json', dest: 'dist', rename: 'package.json' }
+      { src: 'package-lib.json', dest: 'dist', rename: 'package.json'},
+      { src: 'fonts', dest: 'dist'}
     ]
   })
   // postcss(),

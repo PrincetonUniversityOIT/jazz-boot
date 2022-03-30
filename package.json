@@ -1,7 +1,7 @@
 {
   "name": "jazz-boot",
   "description": "The Bootstrap implementation of Princeton University's Jazz Design System.",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "config": {
     "version_short": "2.0"
   },

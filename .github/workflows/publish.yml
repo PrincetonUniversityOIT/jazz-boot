@@ -36,3 +36,39 @@ jobs:
           package: "./dist/package.json"
           token: ${{ secrets.NPM_TOKEN }}
           access: public
+
+      - name: Zip Dist Files
+        id: zip_dist_files
+        uses: vimtor/action-zip@v1
+        with:
+          files: dist/
+          dest: jazz-boot-dist.zip
+
+      - name: Zip Files
+          id: zip_example_files
+          uses: vimtor/action-zip@v1
+          with:
+            files: _site/docs/5.1/examples
+            dest: jazz-boot-examples.zip
+
+      - name: Upload Dist
+        id: upload_release_asset_dist
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./jazz-boot-dist.zip
+          asset_name: jazz-boot-dist.zip
+          asset_content_type: application/zip
+
+      - name: Upload Examples
+        id: upload_release_asset_examples
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./jazz-boot-examples.zip
+          asset_name: jazz-boot-examples.zip
+          asset_content_type: application/zip

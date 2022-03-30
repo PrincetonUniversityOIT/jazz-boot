@@ -21,7 +21,8 @@ const plugins = [
   copy({
     targets: [
       { src: 'package-lib.json', dest: 'dist', rename: 'package.json'},
-      { src: 'fonts', dest: 'dist'}
+      { src: 'fonts', dest: 'dist'},
+      { src: 'logos', dest: 'dist'}
     ]
   })
   // postcss(),

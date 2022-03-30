@@ -1,5 +1,5 @@
 /*!
-  * Bootstrap v2.0.1 (https://github.com/PrincetonUniversityOIT/jazz-boot)
+  * Bootstrap v2.0.3 (https://github.com/PrincetonUniversityOIT/jazz-boot)
   * Copyright 2011-2022 Princeton University OIT
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */

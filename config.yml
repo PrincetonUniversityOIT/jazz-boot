@@ -70,9 +70,9 @@ params:
   icons:                "null"
 
   download:
-    source:             "https://github.com/twbs/bootstrap/archive/v5.1.3.zip"
-    dist:               "https://github.com/twbs/bootstrap/releases/download/v5.1.3/bootstrap-5.1.3-dist.zip"
-    dist_examples:      "https://github.com/twbs/bootstrap/releases/download/v5.1.3/bootstrap-5.1.3-examples.zip"
+    source:             "https://github.com/PrincetonUniversityOIT/jazz-boot/archive/refs/tags/1.0.0.zip"
+    dist:               "https://github.com/PrincetonUniversityOIT/jazz-boot/releases/download/1.0.0/jazz-boot-dist.zip"
+    dist_examples:      "https://github.com/PrincetonUniversityOIT/jazz-boot/releases/download/1.0.0/jazz-boot-examples.zip"
 
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes

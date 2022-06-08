@@ -1,0 +1,19 @@
+$jazz-menu-vertical-border-size: px-to-rem(8) !default;
+
+.jazz-menu-vertical .nav-link {
+  padding: px-to-rem(12) px-to-rem(16);
+  font-weight: 600;
+  border-left: $jazz-menu-vertical-border-size solid transparent;
+  &.active {
+    border-left: $jazz-menu-vertical-border-size solid $primary;
+  }
+  &:not(.active):hover {
+    border-left: $jazz-menu-vertical-border-size solid $secondary;
+  }
+}
+
+.jazz-menu-vertical-label {
+  padding: px-to-rem(4) px-to-rem(16);
+  margin: px-to-rem(8) px-to-rem(0);
+  border-left: $jazz-menu-vertical-border-size solid $gray-400;
+}

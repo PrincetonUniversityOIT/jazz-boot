@@ -39,11 +39,11 @@ In your `custom.scss`, you'll import Bootstrap's source Sass files. You have two
 
 ```scss
 // Custom.scss
-// Option A: Include all of Bootstrap
+// Option A: Include all of Jazz Boot
 
 // Include any default variable overrides here (though functions won't be available)
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/@princeton-design/design-system/scss/jazz";
 
 // Then add additional custom code here
 ```
@@ -53,36 +53,36 @@ In your `custom.scss`, you'll import Bootstrap's source Sass files. You have two
 // Option B: Include parts of Bootstrap
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/@princeton-design/design-system/scss/functions";
 
 // 2. Include any default variable overrides here
 
 // 3. Include remainder of required Bootstrap stylesheets
-@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/@princeton-design/design-system/scss/variables";
 
 // 4. Include any default map overrides here
 
 // 5. Include remainder of required parts
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/@princeton-design/design-system/scss/maps";
+@import "../node_modules/@princeton-design/design-system/scss/mixins";
+@import "../node_modules/@princeton-design/design-system/scss/root";
 
 // 6. Optionally include any other parts as needed
-@import "../node_modules/bootstrap/scss/utilities";
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/containers";
-@import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/@princeton-design/design-system/scss/utilities";
+@import "../node_modules/@princeton-design/design-system/scss/reboot";
+@import "../node_modules/@princeton-design/design-system/scss/type";
+@import "../node_modules/@princeton-design/design-system/scss/images";
+@import "../node_modules/@princeton-design/design-system/scss/containers";
+@import "../node_modules/@princeton-design/design-system/scss/grid";
+@import "../node_modules/@princeton-design/design-system/scss/helpers";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
-@import "../node_modules/bootstrap/scss/utilities/api";
+@import "../node_modules/@princeton-design/design-system/scss/utilities/api";
 
 // 8. Add additional custom code here
 ```
 
-With that setup in place, you can begin to modify any of the Sass variables and maps in your `custom.scss`. You can also start to add parts of Bootstrap under the `// Optional` section as needed. We suggest using the full import stack from our `bootstrap.scss` file as your starting point.
+With that setup in place, you can begin to modify any of the Sass variables and maps in your `custom.scss`. You can also start to add parts of Bootstrap under the `// Optional` section as needed. We suggest using the full import stack from our `jazz.scss` file as your starting point.
 
 ## Variable defaults
 
@@ -96,21 +96,21 @@ Here's an example that changes the `background-color` and `color` for the `<body
 
 ```scss
 // Required
-@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/@princeton-design/design-system/scss/functions";
 
 // Default variable overrides
 $body-bg: #000;
 $body-color: #111;
 
 // Required
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/@princeton-design/design-system/scss/variables";
+@import "../node_modules/@princeton-design/design-system/scss/maps";
+@import "../node_modules/@princeton-design/design-system/scss/mixins";
+@import "../node_modules/@princeton-design/design-system/scss/root";
 
 // Optional Bootstrap components here
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/@princeton-design/design-system/scss/reboot";
+@import "../node_modules/@princeton-design/design-system/scss/type";
 // etc
 ```
 
@@ -164,17 +164,17 @@ To remove colors from `$theme-colors`, or any other map, use `map-remove`. Be aw
 
 ```scss
 // Required
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/@princeton-design/design-system/scss/functions";
+@import "../node_modules/@princeton-design/design-system/scss/variables";
+@import "../node_modules/@princeton-design/design-system/scss/maps";
+@import "../node_modules/@princeton-design/design-system/scss/mixins";
+@import "../node_modules/@princeton-design/design-system/scss/root";
 
 $theme-colors: map-remove($theme-colors, "info", "light", "dark");
 
 // Optional
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/@princeton-design/design-system/scss/reboot";
+@import "../node_modules/@princeton-design/design-system/scss/type";
 // etc
 ```
 

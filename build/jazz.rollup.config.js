@@ -22,7 +22,8 @@ const plugins = [
     targets: [
       { src: 'package-lib.json', dest: 'dist', rename: 'package.json'},
       { src: 'fonts', dest: 'dist'},
-      { src: 'logos', dest: 'dist'}
+      { src: 'logos', dest: 'dist'},
+      { src: 'scss', dest: 'dist'}
     ]
   })
   // postcss(),

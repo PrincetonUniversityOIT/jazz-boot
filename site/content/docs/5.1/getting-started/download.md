@@ -52,7 +52,7 @@ the official compiled versions of Bootstrap.
 Install the Jazz Design System in your Node.js powered apps with [the npm package](https://www.npmjs.com/package/bootstrap):
 
 ```sh
-npm install @princeton-design/jazz-boot
+npm install @princeton-design/design-system
 ```
 
 `const bootstrap = require('bootstrap')` or `import bootstrap from 'bootstrap'` will load all of Bootstrap's plugins onto a `bootstrap` object.
@@ -69,5 +69,5 @@ Install the Bootstrap implementation of the Jazz Design System in your Node.js
 powered apps with [the yarn package](https://yarnpkg.com/en/package/bootstrap):
 
 ```sh
-yarn add @princeton-design/jazz-boot
+yarn add @princeton-design/design-system
 ```

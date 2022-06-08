@@ -44,7 +44,7 @@ jobs:
         id: zip_dist_files
         uses: vimtor/action-zip@v1
         with:
-          files: dist/css/ dist/js/ dist/fonts/ dist/logos/
+          files: dist/
           dest: jazz-boot-dist.zip
 
       - name: Zip Files

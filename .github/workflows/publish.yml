@@ -1,6 +1,6 @@
 name: Publish to NPM
 
-on: 
+on:
   release:
     types: [created]
 
@@ -44,8 +44,9 @@ jobs:
         id: zip_dist_files
         uses: vimtor/action-zip@v1
         with:
-          files: dist/
+          files: dist/css/ dist/js/ dist/fonts/ dist/logos/
           dest: jazz-boot-dist.zip
+          recursive: true
 
       - name: Zip Files
         id: zip_example_files

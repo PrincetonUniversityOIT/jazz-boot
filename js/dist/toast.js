@@ -1,5 +1,5 @@
 /*!
-  * Bootstrap toast.js v2.0.4 (https://github.com/PrincetonUniversityOIT/jazz-boot)
+  * Bootstrap toast.js v2.0.6 (https://github.com/PrincetonUniversityOIT/jazz-boot)
   * Copyright 2011-2022 Princeton University OIT
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */

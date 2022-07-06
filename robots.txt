@@ -2,4 +2,4 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
-Sitemap: https://princetonuniversityoit.github.io/sitemap.xml
+Sitemap: https://pucsidesignsystemtest.z13.web.core.windows.net/sitemap.xml

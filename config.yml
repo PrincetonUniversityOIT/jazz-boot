@@ -1,7 +1,7 @@
 languageCode:           "en"
 title:                  "Jazz Boot"
-baseURL:                "https://pucsidesignsystemtest.z13.web.core.windows.net"
-#baseURL:               "https://princetonuniversityoit.github.io/jazz-boot"
+#baseURL:                "https://pucsidesignsystemtest.z13.web.core.windows.net"
+baseURL:               "https://princetonuniversityoit.github.io/jazz-boot"
 canonifyurls:           true
 
 security:

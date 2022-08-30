@@ -67,6 +67,7 @@ $jazz-blue-600: shade-color($jazz-blue, 20%) !default;
 $jazz-blue-700: shade-color($jazz-blue, 40%) !default;
 $jazz-blue-800: shade-color($jazz-blue, 60%) !default;
 $jazz-blue-900: shade-color($jazz-blue, 80%) !default;
+$jazz-blue-focus: #146feb !default;
 
 $jazz-yellow-100: tint-color($jazz-yellow, 80%) !default;
 $jazz-yellow-200: tint-color($jazz-yellow, 60%) !default;
@@ -221,6 +222,18 @@ $warning:       $jazz-yellow !default;
 $danger:        $jazz-red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+
+// Override focus color
+$input-focus-border-color: $jazz-blue-focus !default;
+
+$jazz-focus-width:         .25rem !default;
+$jazz-focus-blur:          0 !default;
+$jazz-focus-color-opacity: .25 !default;
+$jazz-focus-color:         rgba($jazz-blue-focus, $jazz-focus-color-opacity) !default;
+$input-focus-box-shadow: 0 0 $jazz-focus-blur $jazz-focus-width $jazz-focus-color !default;
+
+// Override link color
+$link-color: $black !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start colors-map

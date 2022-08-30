@@ -231,6 +231,7 @@ sup {
 }
 
 a {
+  font-weight: 600;
   color: #0d6efd;
   text-decoration: underline;
 }

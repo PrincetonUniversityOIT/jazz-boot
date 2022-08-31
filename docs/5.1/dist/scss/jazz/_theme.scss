@@ -225,12 +225,20 @@ $dark:          $gray-900 !default;
 
 // Override focus color
 $input-focus-border-color: $jazz-blue-focus !default;
+$form-check-input-checked-border-color: $jazz-blue-focus !default;
+$form-check-input-indeterminate-border-color: $jazz-blue-focus !default;
+
+$form-check-input-indeterminate-bg-color: $jazz-blue-focus !default;
+$form-check-input-checked-bg-color: $jazz-blue-focus !default;
 
 $jazz-focus-width:         .25rem !default;
 $jazz-focus-blur:          0 !default;
 $jazz-focus-color-opacity: .25 !default;
 $jazz-focus-color:         rgba($jazz-blue-focus, $jazz-focus-color-opacity) !default;
+
 $input-focus-box-shadow: 0 0 $jazz-focus-blur $jazz-focus-width $jazz-focus-color !default;
+$form-select-focus-box-shadow: 0 0 $jazz-focus-blur $jazz-focus-width $jazz-focus-color !default;
+$form-check-input-focus-box-shadow: 0 0 $jazz-focus-blur $jazz-focus-width $jazz-focus-color !default;
 
 // Override link color
 $link-color: $black !default;

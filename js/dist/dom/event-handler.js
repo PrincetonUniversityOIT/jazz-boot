@@ -1,5 +1,5 @@
 /*!
-  * Bootstrap event-handler.js v2.0.7 (https://github.com/PrincetonUniversityOIT/jazz-boot)
+  * Bootstrap event-handler.js v2.0.8 (https://github.com/PrincetonUniversityOIT/jazz-boot)
   * Copyright 2011-2022 Princeton University OIT
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */

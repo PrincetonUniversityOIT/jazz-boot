@@ -12,16 +12,6 @@
   }
 }
 
-@-webkit-keyframes fade_in_show {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes fade_in_show {
   0% {
     opacity: 0;
@@ -53,7 +43,6 @@
   #my-side-nav.collapse.show .my-side-nav-width-div ul {
     display: block;
     opacity: 1;
-    -webkit-animation: fade_in_show 0.75s;
     animation: fade_in_show 0.75s
     /*transition: opacity .25s ease-in;*/
   }

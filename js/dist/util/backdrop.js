@@ -1,6 +1,6 @@
 /*!
-  * Bootstrap backdrop.js v2.0.8 (https://github.com/PrincetonUniversityOIT/jazz-boot)
-  * Copyright 2011-2022 Princeton University OIT
+  * Bootstrap backdrop.js v2.0.9 (https://github.com/PrincetonUniversityOIT/jazz-boot)
+  * Copyright 2011-2023 Princeton University OIT
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
@@ -20,6 +20,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
   /**
    * Constants
    */
@@ -44,6 +45,7 @@
     rootElement: '(element|string)',
     clickCallback: '(function|null)'
   };
+
   /**
    * Class definition
    */
@@ -54,110 +56,86 @@
       this._config = this._getConfig(config);
       this._isAppended = false;
       this._element = null;
-    } // Getters
+    }
 
-
+    // Getters
     static get Default() {
       return Default;
     }
-
     static get DefaultType() {
       return DefaultType;
     }
-
     static get NAME() {
       return NAME;
-    } // Public
+    }
 
-
+    // Public
     show(callback) {
       if (!this._config.isVisible) {
         index.execute(callback);
         return;
       }
-
       this._append();
-
       const element = this._getElement();
-
       if (this._config.isAnimated) {
         index.reflow(element);
       }
-
       element.classList.add(CLASS_NAME_SHOW);
-
       this._emulateAnimation(() => {
         index.execute(callback);
       });
     }
-
     hide(callback) {
       if (!this._config.isVisible) {
         index.execute(callback);
         return;
       }
-
       this._getElement().classList.remove(CLASS_NAME_SHOW);
-
       this._emulateAnimation(() => {
         this.dispose();
         index.execute(callback);
       });
     }
-
     dispose() {
       if (!this._isAppended) {
         return;
       }
-
       EventHandler__default.default.off(this._element, EVENT_MOUSEDOWN);
-
       this._element.remove();
-
       this._isAppended = false;
-    } // Private
+    }
 
-
+    // Private
     _getElement() {
       if (!this._element) {
         const backdrop = document.createElement('div');
         backdrop.className = this._config.className;
-
         if (this._config.isAnimated) {
           backdrop.classList.add(CLASS_NAME_FADE);
         }
-
         this._element = backdrop;
       }
-
       return this._element;
     }
-
     _configAfterMerge(config) {
       // use getElement() with the default "body" to get a fresh Element on each instantiation
       config.rootElement = index.getElement(config.rootElement);
       return config;
     }
-
     _append() {
       if (this._isAppended) {
         return;
       }
-
       const element = this._getElement();
-
       this._config.rootElement.append(element);
-
       EventHandler__default.default.on(element, EVENT_MOUSEDOWN, () => {
         index.execute(this._config.clickCallback);
       });
       this._isAppended = true;
     }
-
     _emulateAnimation(callback) {
       index.executeAfterTransition(callback, this._getElement(), this._config.isAnimated);
     }
-
   }
 
   return Backdrop;

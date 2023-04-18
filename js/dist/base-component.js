@@ -1,6 +1,6 @@
 /*!
-  * Bootstrap base-component.js v2.0.8 (https://github.com/PrincetonUniversityOIT/jazz-boot)
-  * Copyright 2011-2022 Princeton University OIT
+  * Bootstrap base-component.js v2.0.9 (https://github.com/PrincetonUniversityOIT/jazz-boot)
+  * Copyright 2011-2023 Princeton University OIT
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
@@ -21,11 +21,13 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
   /**
    * Constants
    */
 
   const VERSION = '5.1.3';
+
   /**
    * Class definition
    */
@@ -34,64 +36,51 @@
     constructor(element, config) {
       super();
       element = index.getElement(element);
-
       if (!element) {
         return;
       }
-
       this._element = element;
       this._config = this._getConfig(config);
       Data__default.default.set(this._element, this.constructor.DATA_KEY, this);
-    } // Public
+    }
 
-
+    // Public
     dispose() {
       Data__default.default.remove(this._element, this.constructor.DATA_KEY);
       EventHandler__default.default.off(this._element, this.constructor.EVENT_KEY);
-
       for (const propertyName of Object.getOwnPropertyNames(this)) {
         this[propertyName] = null;
       }
     }
-
     _queueCallback(callback, element, isAnimated = true) {
       index.executeAfterTransition(callback, element, isAnimated);
     }
-
     _getConfig(config) {
       config = this._mergeConfigObj(config, this._element);
       config = this._configAfterMerge(config);
-
       this._typeCheckConfig(config);
-
       return config;
-    } // Static
+    }
 
-
+    // Static
     static getInstance(element) {
       return Data__default.default.get(index.getElement(element), this.DATA_KEY);
     }
-
     static getOrCreateInstance(element, config = {}) {
       return this.getInstance(element) || new this(element, typeof config === 'object' ? config : null);
     }
-
     static get VERSION() {
       return VERSION;
     }
-
     static get DATA_KEY() {
       return `bs.${this.NAME}`;
     }
-
     static get EVENT_KEY() {
       return `.${this.DATA_KEY}`;
     }
-
     static eventName(name) {
       return `${name}${this.EVENT_KEY}`;
     }
-
   }
 
   return BaseComponent;

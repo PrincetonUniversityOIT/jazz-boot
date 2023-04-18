@@ -68,7 +68,7 @@ params:
   opencollective:       "null"
   blog:                 "null"
   themes:               "null"
-  icons:                "null"
+  icons:                "https://icons.getbootstrap.com/"
 
   download:
     source:             "https://github.com/PrincetonUniversityOIT/jazz-boot/archive/refs/tags/1.0.0.zip"

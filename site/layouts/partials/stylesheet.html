@@ -10,6 +10,7 @@
 <!--{{- end }}-->
 
 <link href="/docs/{{ .Site.Params.docs_version }}/dist/css/jazz.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
 {{- if (ne .Page.Layout "examples") }}
 {{- $targetDocsCssPath := path.Join "/docs" .Site.Params.docs_version "assets/css/docs.css" -}}

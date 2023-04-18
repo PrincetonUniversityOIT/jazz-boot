@@ -1,6 +1,6 @@
 /*!
-  * Bootstrap config.js v2.0.8 (https://github.com/PrincetonUniversityOIT/jazz-boot)
-  * Copyright 2011-2022 Princeton University OIT
+  * Bootstrap config.js v2.0.9 (https://github.com/PrincetonUniversityOIT/jazz-boot)
+  * Copyright 2011-2023 Princeton University OIT
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
@@ -19,6 +19,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
   /**
    * Class definition
    */
@@ -28,47 +29,38 @@
     static get Default() {
       return {};
     }
-
     static get DefaultType() {
       return {};
     }
-
     static get NAME() {
       throw new Error('You have to implement the static method "NAME", for each component!');
     }
-
     _getConfig(config) {
       config = this._mergeConfigObj(config);
       config = this._configAfterMerge(config);
-
       this._typeCheckConfig(config);
-
       return config;
     }
-
     _configAfterMerge(config) {
       return config;
     }
-
     _mergeConfigObj(config, element) {
-      return { ...this.constructor.Default,
+      return {
+        ...this.constructor.Default,
         ...(index.isElement(element) ? Manipulator__default.default.getDataAttributes(element) : {}),
         ...(typeof config === 'object' ? config : {})
       };
     }
-
     _typeCheckConfig(config, configTypes = this.constructor.DefaultType) {
       for (const property of Object.keys(configTypes)) {
         const expectedTypes = configTypes[property];
         const value = config[property];
         const valueType = index.isElement(value) ? 'element' : index.toType(value);
-
         if (!new RegExp(expectedTypes).test(valueType)) {
           throw new TypeError(`${this.constructor.NAME.toUpperCase()}: Option "${property}" provided type "${valueType}" but expected type "${expectedTypes}".`);
         }
       }
     }
-
   }
 
   return Config;

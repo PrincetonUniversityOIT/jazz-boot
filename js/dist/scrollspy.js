@@ -1,6 +1,6 @@
 /*!
-  * Bootstrap scrollspy.js v2.0.8 (https://github.com/PrincetonUniversityOIT/jazz-boot)
-  * Copyright 2011-2022 Princeton University OIT
+  * Bootstrap scrollspy.js v2.0.9 (https://github.com/PrincetonUniversityOIT/jazz-boot)
+  * Copyright 2011-2023 Princeton University OIT
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
@@ -22,6 +22,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
+
   /**
    * Constants
    */
@@ -55,6 +56,7 @@
     method: 'string',
     target: '(string|element)'
   };
+
   /**
    * Class definition
    */
@@ -69,24 +71,21 @@
       this._scrollHeight = 0;
       EventHandler__default.default.on(this._scrollElement, EVENT_SCROLL, () => this._process());
       this.refresh();
-
       this._process();
-    } // Getters
+    }
 
-
+    // Getters
     static get Default() {
       return Default;
     }
-
     static get DefaultType() {
       return DefaultType;
     }
-
     static get NAME() {
       return NAME;
-    } // Public
+    }
 
-
+    // Public
     refresh() {
       this._offsets = [];
       this._targets = [];
@@ -97,92 +96,69 @@
       const targets = SelectorEngine__default.default.find(SELECTOR_LINK_ITEMS, this._config.target).map(element => {
         const targetSelector = index.getSelectorFromElement(element);
         const target = targetSelector ? SelectorEngine__default.default.findOne(targetSelector) : null;
-
         if (!target) {
           return null;
         }
-
         const targetBCR = target.getBoundingClientRect();
         return targetBCR.width || targetBCR.height ? [Manipulator__default.default[offsetMethod](target).top + offsetBase, targetSelector] : null;
       }).filter(Boolean).sort((a, b) => a[0] - b[0]);
-
       for (const target of targets) {
         this._offsets.push(target[0]);
-
         this._targets.push(target[1]);
       }
     }
-
     dispose() {
       EventHandler__default.default.off(this._scrollElement, EVENT_KEY);
       super.dispose();
-    } // Private
+    }
 
+    // Private
 
     _configAfterMerge(config) {
       config.target = index.getElement(config.target) || document.documentElement;
       return config;
     }
-
     _getScrollTop() {
       return this._scrollElement === window ? this._scrollElement.pageYOffset : this._scrollElement.scrollTop;
     }
-
     _getScrollHeight() {
       return this._scrollElement.scrollHeight || Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
     }
-
     _getOffsetHeight() {
       return this._scrollElement === window ? window.innerHeight : this._scrollElement.getBoundingClientRect().height;
     }
-
     _process() {
       const scrollTop = this._getScrollTop() + this._config.offset;
-
       const scrollHeight = this._getScrollHeight();
-
       const maxScroll = this._config.offset + scrollHeight - this._getOffsetHeight();
-
       if (this._scrollHeight !== scrollHeight) {
         this.refresh();
       }
-
       if (scrollTop >= maxScroll) {
         const target = this._targets[this._targets.length - 1];
-
         if (this._activeTarget !== target) {
           this._activate(target);
         }
-
         return;
       }
-
       if (this._activeTarget && scrollTop < this._offsets[0] && this._offsets[0] > 0) {
         this._activeTarget = null;
-
         this._clear();
-
         return;
       }
-
       for (const i of this._offsets.keys()) {
         const isActiveTarget = this._activeTarget !== this._targets[i] && scrollTop >= this._offsets[i] && (typeof this._offsets[i + 1] === 'undefined' || scrollTop < this._offsets[i + 1]);
-
         if (isActiveTarget) {
           this._activate(this._targets[i]);
         }
       }
     }
-
     _activate(target) {
       this._activeTarget = target;
-
       this._clear();
-
       const queries = SELECTOR_LINK_ITEMS.split(',').map(selector => `${selector}[data-bs-target="${target}"],${selector}[href="${target}"]`);
       const link = SelectorEngine__default.default.findOne(queries.join(','), this._config.target);
       link.classList.add(CLASS_NAME_ACTIVE);
-
       if (link.classList.contains(CLASS_NAME_DROPDOWN_ITEM)) {
         SelectorEngine__default.default.findOne(SELECTOR_DROPDOWN_TOGGLE, link.closest(SELECTOR_DROPDOWN)).classList.add(CLASS_NAME_ACTIVE);
       } else {
@@ -191,9 +167,9 @@
           // With both <ul> and <nav> markup a parent is the previous sibling of any nav ancestor
           for (const item of SelectorEngine__default.default.prev(listGroup, `${SELECTOR_NAV_LINKS}, ${SELECTOR_LIST_ITEMS}`)) {
             item.classList.add(CLASS_NAME_ACTIVE);
-          } // Handle special case when .nav-link is inside .nav-item
+          }
 
-
+          // Handle special case when .nav-link is inside .nav-item
           for (const navItem of SelectorEngine__default.default.prev(listGroup, SELECTOR_NAV_ITEMS)) {
             for (const item of SelectorEngine__default.default.children(navItem, SELECTOR_NAV_LINKS)) {
               item.classList.add(CLASS_NAME_ACTIVE);
@@ -201,48 +177,42 @@
           }
         }
       }
-
       EventHandler__default.default.trigger(this._scrollElement, EVENT_ACTIVATE, {
         relatedTarget: target
       });
     }
-
     _clear() {
       const activeNodes = SelectorEngine__default.default.find(SELECTOR_LINK_ITEMS, this._config.target).filter(node => node.classList.contains(CLASS_NAME_ACTIVE));
-
       for (const node of activeNodes) {
         node.classList.remove(CLASS_NAME_ACTIVE);
       }
-    } // Static
+    }
 
-
+    // Static
     static jQueryInterface(config) {
       return this.each(function () {
         const data = ScrollSpy.getOrCreateInstance(this, config);
-
         if (typeof config !== 'string') {
           return;
         }
-
         if (typeof data[config] === 'undefined') {
           throw new TypeError(`No method named "${config}"`);
         }
-
         data[config]();
       });
     }
-
   }
+
   /**
    * Data API implementation
    */
-
 
   EventHandler__default.default.on(window, EVENT_LOAD_DATA_API, () => {
     for (const spy of SelectorEngine__default.default.find(SELECTOR_DATA_SPY)) {
       new ScrollSpy(spy); // eslint-disable-line no-new
     }
   });
+
   /**
    * jQuery
    */

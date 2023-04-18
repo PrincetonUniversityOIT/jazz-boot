@@ -175,6 +175,59 @@
   src: local(""), url("../fonts/public_sans/public-sans-v4-latin-900italic.eot?#iefix") format("embedded-opentype"), url("../fonts/public_sans/public-sans-v4-latin-900italic.woff2") format("woff2"), url("../fonts/public_sans/public-sans-v4-latin-900italic.woff") format("woff"), url("../fonts/public_sans/public-sans-v4-latin-900italic.ttf") format("truetype"), url("../fonts/public_sans/public-sans-v4-latin-900italic.svg#PublicSans") format("svg");
   font-display: swap;
 }
+.jazz-icon {
+  display: inline-block;
+  width: 1em;
+  min-width: 1em;
+  height: 1em;
+  min-height: 1em;
+  -webkit-mask-size: auto;
+  mask-size: auto;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  vertical-align: -0.125rem;
+  background-color: currentColor;
+}
+
+.jazz-icon.jazz-icon-2x {
+  width: 2em;
+  min-width: 2em;
+  height: 2em;
+  min-height: 2em;
+}
+
+.jazz-icon.jazz-icon-3x {
+  width: 3em;
+  min-width: 3em;
+  height: 3em;
+  min-height: 3em;
+}
+
+.jazz-icon.jazz-icon-5x {
+  width: 5em;
+  min-width: 5em;
+  height: 5em;
+  min-height: 5em;
+}
+
+.jazz-icon.jazz-icon-7x {
+  width: 7em;
+  min-width: 7em;
+  height: 7em;
+  min-height: 7em;
+}
+
+.jazz-icon.jazz-icon-9x {
+  width: 9em;
+  min-width: 9em;
+  height: 9em;
+  min-height: 9em;
+}
+
+.jazz-icon-transparent {
+  filter: opacity(0);
+}
+
 :root {
   --bs-jazz-pu-orange: #e77500;
   --bs-jazz-red: #d14112;

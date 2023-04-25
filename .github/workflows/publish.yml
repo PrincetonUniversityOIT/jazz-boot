@@ -34,7 +34,7 @@ jobs:
       - name: Build docs
         run: npm run docs-build
 
-      - uses: JS-DevTools/npm-publish@v1
+      - uses: JS-DevTools/npm-publish@v2
         with:
           package: "./dist/package.json"
           token: ${{ secrets.NPM_TOKEN }}
